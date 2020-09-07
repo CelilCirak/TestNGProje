@@ -55,10 +55,40 @@ public class ActionClassTest extends TestBase {
             e.printStackTrace();
         }
         actions.sendKeys(Keys.PAGE_UP).perform();
+        actions.sendKeys(Keys.ARROW_UP);
+
+    }
+
+    @Test
+    public void buyukKucukYazma(){
+
+        driver.get("http://google.com");
+        //name="q"
+        WebElement aramaKutusu = driver.findElement(By.name("q"));
+
+        //Bu standart yazmamiz
+        // aramaKutusu.sendKeys("merhaba nasilsiniz live channel");
+        //harfleri buyuk yapar.(Shift basili oluyor)
+         // aramaKutusu.sendKeys(Keys.SHIFT +"merhaba nasilsiniz" +);
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(aramaKutusu).click()
+                .keyDown(Keys.SHIFT).sendKeys("merhaba")
+                .keyUp(Keys.SHIFT).sendKeys(" nasilsiniz")
+                .perform();
+
+}
+    @Test
+    public void dragAndDrop(){
+        driver.get("http://google.com");
+        WebElement aramaKutusu = driver.findElement(By.name("q"));
+        WebElement logo = driver.findElement(By.id("hplogo"));
+        Actions actions = new Actions((driver));
+        actions.dragAndDrop(logo, aramaKutusu).perform();
+
+
 
 
     }
 
 }
-
-

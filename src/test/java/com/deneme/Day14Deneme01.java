@@ -59,6 +59,8 @@ public class Day14Deneme01 {
 
         WebElement maxBox = driver.findElement(By.id("high-price"));
         maxBox.sendKeys("20");
+        maxBox.submit();
+
 
             System.out.println(driver.getCurrentUrl());
 
