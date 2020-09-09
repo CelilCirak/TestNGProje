@@ -21,14 +21,10 @@ public class SoftAssertTest {
       SoftAssert kullaniminin HardAssert kullanimindan farklari:
       1. SofAssert'te eger test basarisiz olursa, kalan kisim calistirilir.
       2. SoftAssert clasindan obje olusturmak zorundayiz.
-
       Assert=>
       Verify=>
 
-
-
      */
-
 
     WebDriver driver;
 

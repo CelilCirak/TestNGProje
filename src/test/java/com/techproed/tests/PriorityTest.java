@@ -1,6 +1,6 @@
 package com.techproed.tests;
 
-import io.github.bonigarcia.wdm.ChromeDriverManager;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,25 +20,15 @@ public class PriorityTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
-
-
-
     }
-
-
-
     @Test (priority = 1)
     public void dropDownTest(){
         driver.get("http://amazon.com");
-
-
     }
-
     @Test (priority = 0)
     public void googleAramaTest(){
         driver.get("http://google.com");
     }
-
     @Test (priority = 2)
     public void baslikTesti(){
         driver.get("http://facebook.com");

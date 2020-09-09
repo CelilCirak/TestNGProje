@@ -12,7 +12,6 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 public class Day14Deneme01 {
 
-
      @BeforeClass
     public static void setUp() {
          WebDriverManager.chromedriver().setup();

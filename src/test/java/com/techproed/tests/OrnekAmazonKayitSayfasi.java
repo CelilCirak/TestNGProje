@@ -9,10 +9,7 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 public class OrnekAmazonKayitSayfasi extends TestBase {
-
     //Day14
-
-
     @Test
     public void test1(){
         driver.get("http://amazon.com");
@@ -21,10 +18,8 @@ public class OrnekAmazonKayitSayfasi extends TestBase {
         actions.moveToElement(button).perform();
         WebElement startHere = driver.findElement(By.partialLinkText("Start here."));
         startHere.click();
-
         String title=driver.getTitle();
         Assert.assertEquals("Amazon Registration",title);
-
         // String sayfaTitle = driver.getTitle();
        // System.out.println(sayfaTitle);
        // Assert.assertEquals("Amazon Registration", sayfaTitle);
