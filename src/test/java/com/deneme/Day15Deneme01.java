@@ -1,6 +1,6 @@
 package com.deneme;
 
-import com.deneme.main.MainClass;
+import com.deneme.motor.MainClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.WebElement;
@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 
 public class Day15Deneme01 extends MainClass {
+
 
     @Test
     public void test1() throws InterruptedException {

@@ -29,7 +29,7 @@ public class OrnekAmazonKayitSayfasi extends TestBase {
 
     public void test02(){
         WebElement isim = driver.findElement(By.id("ap_customer_name"));
-        isim.sendKeys("Hamza Yılmaz");
+        isim.sendKeys("Canda DERICI");
         driver.findElement(By.id("ap_email")).sendKeys("hamzayilmaz2020@protonmail.com");
         driver.findElement(By.id("ap_password")).sendKeys("Amazon06.");
         driver.findElement(By.id("ap_password_check")).sendKeys("Amazon06.");

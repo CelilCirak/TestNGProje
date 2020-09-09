@@ -25,25 +25,24 @@ public class OrnekHotelOlusturma extends TestBase {
     @Test
     public void hotelCreate(){
         WebElement codeKutusu = driver.findElement(By.id("Code"));
-        WebElement nameKutusu = driver.findElement(By.id("Ali"));
-        WebElement adresKutusu= driver.findElement(By.id("Babiali Yokusu"));
-        WebElement phoneKutusu= driver.findElement(By.id("78763452"));
-        WebElement emailKutusu= driver.findElement(By.id("ali@gmail"));
-        WebElement idGroup     = driver.findElement(By.id("IDGroup"));
-        WebElement saveButonu = driver.findElement(By.id("btnSubmit"));
-
         codeKutusu.sendKeys("553434");
-        nameKutusu.sendKeys("Hamza Yılmaz");
+        WebElement nameKutusu = driver.findElement(By.id("Name"));
+        nameKutusu.sendKeys("Hasan Yanbasan");
+        WebElement adresKutusu= driver.findElement(By.id("Address"));
         adresKutusu.sendKeys("Çıkmaz Sk. 34/20");
+        WebElement phoneKutusu= driver.findElement(By.id("Phone"));
         phoneKutusu.sendKeys("022222222222");
+        WebElement emailKutusu= driver.findElement(By.id("Email"));
         emailKutusu.sendKeys("merhaba@dunya.com");
-
+        WebElement idGroup     = driver.findElement(By.id("IDGroup"));
         Select select = new Select(idGroup);
         select.selectByIndex(2);
+        WebElement saveButonu = driver.findElement(By.id("btnSubmit"));
         saveButonu.click();
 
+
         // WebElement basariliYazisi = driver.findElement(By.className("bootbox-body"));
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        WebDriverWait wait = new WebDriverWait(driver, 70);
         WebElement basariliYazisi = wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("bootbox-body")));
         Assert.assertTrue(basariliYazisi.isDisplayed());
     }

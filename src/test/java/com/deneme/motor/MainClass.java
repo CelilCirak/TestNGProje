@@ -1,4 +1,4 @@
-package com.deneme.main;
+package com.deneme.motor;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
@@ -18,7 +18,7 @@ public class MainClass {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+        driver.manage().timeouts().implicitlyWait(8000, TimeUnit.MILLISECONDS);
 
     }
 
