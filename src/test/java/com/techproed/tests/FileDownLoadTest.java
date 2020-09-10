@@ -37,8 +37,8 @@ public class FileDownLoadTest extends TestBase {
     @Test
     public void  dosyaDownload() throws InterruptedException {
         driver.get("http://the-internet.herokuapp.com/download");
-        WebElement anmsterdamLinki = driver.findElement(By.partialLinkText("Amsterdam.jpg"));
-        anmsterdamLinki.click();
+        WebElement amsterdamLinki = driver.findElement(By.partialLinkText("Amsterdam.jpg"));
+        amsterdamLinki.click();
         Thread.sleep(3000);
 
         boolean varMi = Files.exists(Paths.get("/Users/cc/Downloads"));

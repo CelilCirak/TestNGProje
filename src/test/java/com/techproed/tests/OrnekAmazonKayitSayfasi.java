@@ -23,6 +23,7 @@ public class OrnekAmazonKayitSayfasi extends TestBase {
         // String sayfaTitle = driver.getTitle();
        // System.out.println(sayfaTitle);
        // Assert.assertEquals("Amazon Registration", sayfaTitle);
+
     }
 
     @Test(dependsOnMethods = "test")
