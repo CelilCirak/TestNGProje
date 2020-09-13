@@ -25,7 +25,7 @@ public class PriorityTest {
     public void dropDownTest(){
         driver.get("http://amazon.com");
     }
-    @Test (priority = 0)
+    @Test (priority = 3)
     public void googleAramaTest(){
         driver.get("http://google.com");
     }

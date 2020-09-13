@@ -8,7 +8,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 
-
 public class ActionClassTest extends TestBase {
 
     @Test
@@ -73,8 +72,8 @@ public class ActionClassTest extends TestBase {
 
         Actions actions = new Actions(driver);
         actions.moveToElement(aramaKutusu).click()
-                .keyDown(Keys.SHIFT).sendKeys("merhaba")
-                .keyUp(Keys.SHIFT).sendKeys(" nasilsiniz")
+                .keyDown(Keys.SHIFT).sendKeys("merhaba nasilsiniz")
+                .keyUp(Keys.SHIFT).sendKeys(" Dostlar")
                 .perform();
 
 }
@@ -85,8 +84,6 @@ public class ActionClassTest extends TestBase {
         WebElement logo = driver.findElement(By.id("hplogo"));
         Actions actions = new Actions((driver));
         actions.dragAndDrop(logo, aramaKutusu).perform();
-
-
 
 
     }

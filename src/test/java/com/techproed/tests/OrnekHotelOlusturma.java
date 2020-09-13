@@ -37,6 +37,8 @@ public class OrnekHotelOlusturma extends TestBase {
         WebElement idGroup     = driver.findElement(By.id("IDGroup"));
         Select select = new Select(idGroup);
         select.selectByIndex(2);
+        WebElement secim = select.getFirstSelectedOption();
+        System.out.println(secim.getText());
         WebElement saveButonu = driver.findElement(By.id("btnSubmit"));
         saveButonu.click();
 
