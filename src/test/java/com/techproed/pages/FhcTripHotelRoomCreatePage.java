@@ -7,28 +7,29 @@ import org.openqa.selenium.support.PageFactory;
 
 public class FhcTripHotelRoomCreatePage {
     WebDriver driver;
-    public FhcTripHotelRoomCreatePage(WebDriver driver){
+
+    public FhcTripHotelRoomCreatePage(WebDriver driver) {
         this.driver = driver;
 
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy( id = "IDHotel")
+    @FindBy(id = "IDHotel")
     public WebElement idHotelDropDown;
 
-    @FindBy( id = "Code")
+    @FindBy(id = "Code")
     public WebElement codeKutusu;
 
-    @FindBy( id = "Name")
+    @FindBy(id = "Name")
     public WebElement nameKutusu;
 
-    @FindBy( id = "Location")
+    @FindBy(id = "Location")
     public WebElement locationKutusu;
 
-    @FindBy( xpath = "//textarea[@dir='ltr']")
+    @FindBy(xpath = "//textarea[@dir='ltr']")
     public WebElement dscKutusu;
 
-    @FindBy( id = "Price")
+    @FindBy(id = "Price")
     public WebElement priceKutusu;
 
     @FindBy(partialLinkText = "500")
@@ -43,12 +44,13 @@ public class FhcTripHotelRoomCreatePage {
     @FindBy(id = "MaxChildCount")
     public WebElement maxChildCnt;
 
-    @FindBy( id = "IsAvailable")
+    @FindBy(id = "IsAvailable")
     public WebElement approved;
 
     @FindBy(id = "btnSubmit")
     public WebElement saveButonu;
 
-    @FindBy( xpath = "//*[.='HotelRoom was inserted successfully']")
+    @FindBy(xpath = "//*[.='HotelRoom was inserted successfully']")
     public WebElement basariliYazisi;
+
 }
