@@ -95,7 +95,7 @@ public class SoftAssertTest {
 
     @AfterClass
     public void tearDown(){
-       // driver.quit();
+       driver.quit();
 
     }
 }

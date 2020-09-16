@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite - belirli methodlar">
+    <test name="Test - method test">
+
+        <classes>
+            <class name="com.techproed.tests.ActionClassTest">
+                <methods>
+
+                    <include name="explicitWait"></include>
+                </methods>
+
+
+            </class>
+            
+            <class name="com.techproed.tests.WaitTest">
+                <methods>
+                    <exclude name="implicitlyWait"></exclude>
+                </methods>
+                
+                
+            </class>
+
+
+        </classes>
+
+
+    </test>
+</suite>

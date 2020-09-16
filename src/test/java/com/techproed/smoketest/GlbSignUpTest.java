@@ -29,7 +29,7 @@ public class GlbSignUpTest {
 
     @AfterClass
     public void tearDown(){
-       // Driver.closeDriver();
+        Driver.closeDriver();
 
     }
 }

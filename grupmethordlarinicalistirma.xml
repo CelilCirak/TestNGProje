@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite - Test Gruplari">
+    <test name="Grubu - 'fhctrip' olan testler">
+        <groups>
+            <run>
+                <include name="fhctrip"></include>
+                <include name="deneme14"></include>
+            </run>
+        </groups>
+        <packages>
+            <!-- name=".*" yaparsak tum paketleri tarar. Yada "com.techproed.tests" secebiliriz.-->
+
+            <package name=".*"></package>
+        </packages>
+
+    </test>
+</suite>

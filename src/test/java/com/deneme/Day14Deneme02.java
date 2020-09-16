@@ -24,7 +24,7 @@ public class Day14Deneme02 {
 
     }
 
-    @Test
+    @Test(groups = "deneme14")
     public void iframeTest1() {
         driver.get("https://the-internet.herokuapp.com/iframe");
         // index ile iframe'e geçiş yapabiliyoruz.
