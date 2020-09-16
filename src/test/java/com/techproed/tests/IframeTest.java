@@ -44,7 +44,7 @@ public class IframeTest {
         driver.switchTo().frame("mce_0_ifr");
         WebElement paragraf = driver.findElement(By.xpath("//p"));
         paragraf.clear();
-        paragraf.sendKeys("Merhaba Iframe");
+        paragraf.sendKeys("Merhaba Iframe2");
 
     }
 
@@ -56,7 +56,7 @@ public class IframeTest {
         driver.switchTo().frame(iframe);
         WebElement paragraf = driver.findElement(By.xpath("//p"));
         paragraf.clear();
-        paragraf.sendKeys("Merhaba Iframe");
+        paragraf.sendKeys("Merhaba Iframe3");
     }
 
     @Test
@@ -66,7 +66,7 @@ public class IframeTest {
         driver.switchTo().frame(0);
         WebElement paragraf = driver.findElement(By.xpath("//p"));
         paragraf.clear();
-        paragraf.sendKeys("Merhaba Iframe");
+        paragraf.sendKeys("Merhaba Iframe4");
 
 
         // Alt kod ile iframe' den cikarak syfa icindeki diger webwlwmwntw tikladik.

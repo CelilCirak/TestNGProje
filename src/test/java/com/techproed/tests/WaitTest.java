@@ -34,9 +34,9 @@ public class WaitTest extends TestBase {
         WebElement message = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("message")));
         System.out.println(message.getText());
 
-        // <p id"message">It's gone!</p>
-       // WebElement message = driver.findElement(By.id("message"));
-       // System.out.println(message.getText());
+//         <p id"message">It's gone!</p>
+//        WebElement message = driver.findElement(By.id("message"));
+//        System.out.println(message.getText());
 
 
 
