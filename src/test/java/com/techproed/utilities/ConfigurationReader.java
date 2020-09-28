@@ -14,6 +14,7 @@ public class ConfigurationReader {
             properties = new Properties();
             properties.load(file);
         } catch (Exception e) {
+            System.out.println("Properties dosyasi bulunamadi");
 
         }
     }
