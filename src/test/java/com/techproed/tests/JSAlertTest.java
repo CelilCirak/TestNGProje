@@ -32,7 +32,7 @@ import java.util.concurrent.TimeUnit;
           WebElement button = driver.findElement(By.xpath("//button[@onclick='jsAlert()']"));
           button.click();
 
-          // Alert'in icerdigi mesaji almalk icin .getText() kullanitiz.
+          // Alert'in icerdigi mesaji almalk icin .getText() kullaniriz.
           String alertMesaji = driver.switchTo().alert().getText();
           System.out.println(alertMesaji);
 
@@ -47,18 +47,18 @@ import java.util.concurrent.TimeUnit;
           WebElement button = driver.findElement(By.xpath("//button[@onclick='jsConfirm()']"));
           button.click();
 
-          // Alert'in icerdigi mesaji almalk icin .getText() kullanitiz.
+          // Alert'in icerdigi mesaji almalk icin .getText() kullaniriz.
           String alertMesaji = driver.switchTo().alert().getText();
           System.out.println(alertMesaji);
 
           //alert butonuna tiklamak icin.
           driver.switchTo().alert().accept();
 
-          String mesaj = driver.switchTo().alert().getText();
-          System.out.println(mesaj);
+        //  String mesaj = driver.switchTo().alert().getText();
+        //  System.out.println(mesaj);
 
           // alert icindeki cancel butonuna tiklar.
-          driver.switchTo().alert().dismiss();
+        //  driver.switchTo().alert().dismiss();
 
       }
 
@@ -68,7 +68,7 @@ import java.util.concurrent.TimeUnit;
           WebElement button = driver.findElement(By.xpath("//button[@onclick='jsPrompt()']"));
           button.click();
 
-          // Alert'in icerdigi mesaji almalk icin .getText() kullanitiz.
+          // Alert'in icerdigi mesaji almalk icin .getText() kullaniriz.
           String mesaj = driver.switchTo().alert().getText();
           System.out.println(mesaj);
 

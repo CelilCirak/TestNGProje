@@ -8,12 +8,12 @@ import org.testng.annotations.Test;
 public class DataProviderTest1 {
 
     @Test (dataProvider = "bilgiler")
-    public void loginTest( String kullanici, String sifre){
+    public void loginTest( String user, String password){
         Driver.getDriver().get("http://fhctrip-qa.com/Account/LogOn?ReturnUrl=%2FAdmin%2FUserAdmin");
 
         FhcTripLoginNewPage loginNewPage = new FhcTripLoginNewPage();
-        loginNewPage.userNameKutusu.sendKeys(kullanici);
-        loginNewPage.passwordKutusu.sendKeys(sifre);
+        loginNewPage.userNameKutusu.sendKeys(user);
+        loginNewPage.passwordKutusu.sendKeys(password);
         loginNewPage.loginButonu.click();
 
     }

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class AmazonNewPage {
 
     public AmazonNewPage(){
+
         PageFactory.initElements(Driver.getDriver(), this);
     }
     @FindBy( id = "twotabsearchtextbox")
